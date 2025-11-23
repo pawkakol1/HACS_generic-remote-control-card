@@ -1895,6 +1895,180 @@ buttons:
 
   </details>
 
+<details>
+  <summary>Action IR32 using mqtt call to smart IR blaster Moes UFO-R11 : (Click to expand!)</summary>
+  
+  An example of a ACTION IR32 remote that sends an mqtt ir code to Zigbee IR Remote Control Moes UFO-R11.
+  I use Zigbee2MQTT in Home Assistant to learn the appropriate ir codes for the remote. You change topic and payload.
+  
+  <img src="https://github.com/papaeng89/generic-remote-control-card/blob/master/dist/remotes/action_ir32/base.png" height="578">
+
+```
+type: custom:generic-remote-control-card
+buttons:
+  button_on:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_off:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_timer:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_red:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_green:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_blue:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_orange:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_lightgreen:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_purple:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_yellow:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: >-
+        BSwjYxE2AoABAVsCgAPgAwFAEwM2AooGQAMAW6AHQAvgCQNAAUAX4AMB4AMPwAtAB8ADQAETigZbAtmZLCOkCFsC//8sI6QIWwI=
+  button_lightblue:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_pink:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_plus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_minus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BT8jXRE+AuAXAQF8BuAVA+ADAcAr4AMBwBNAB8ABQAvAAwcHmj8j3Qg+Ag==
+  button_white:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_music_minus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_music_plus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_mode:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_icset_plus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_icset:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+  button_icset_minus:
+    call: mqtt.publish
+    data:
+      qos: "1"
+      retain: false
+      topic: home-assistant/UFO-R11/set/ir_code_to_send
+      payload: BUEjexE+AuAJAQJsAj7gAgEBfQbgFQPgAwFAK+AHAUATwANAAcALwAcHBZpBI7wIPgI=
+name: Led
+remote_template: action_ir32
+style: |
+  ha-card {
+    font-size: 10px;
+  }
+  h1{
+    text-align:left;
+    margin-left: 50px;
+  }
+
+
+```
+
+  </details>
 
 # Contribution
 
